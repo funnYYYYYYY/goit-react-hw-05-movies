@@ -23,7 +23,7 @@ const Nav = styled.nav`
   padding-top: 30 px;
 `;
 
-export const Navigation = () => {
+const Navigation = () => {
   return (
     <Nav>
       <Link to="/">Home</Link>
@@ -31,3 +31,5 @@ export const Navigation = () => {
     </Nav>
   );
 };
+
+export default Navigation;

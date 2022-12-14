@@ -19,7 +19,7 @@ const Author = styled.b`
   color: green;
 `;
 
-export const Reviews = () => {
+const Reviews = () => {
   const [reviews, setReviews] = useState({});
   console.log('reviews', reviews);
 
@@ -54,3 +54,5 @@ export const Reviews = () => {
     </div>
   );
 };
+
+export default Reviews;

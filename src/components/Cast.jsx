@@ -47,7 +47,7 @@ const BASE_IMG_URL = 'https://image.tmdb.org/t/p/w500';
 const fakeUrl =
   'https://yt3.ggpht.com/AAKF_677TIvjFz_9xFF0R6PgiVd0kRpEtY6APSxSDRP65nXg8hkn9NFsz2bRd9_Z37DJ9D_b=s900-c-k-c0x00ffffff-no-rj';
 
-export const Cast = () => {
+const Cast = () => {
   const [credits, setCredits] = useState([]);
   console.log('cast', credits);
   const { movieId } = useParams();
@@ -84,3 +84,5 @@ export const Cast = () => {
     </Container>
   );
 };
+
+export default Cast;

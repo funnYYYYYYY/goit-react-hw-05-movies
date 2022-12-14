@@ -13,7 +13,7 @@ const Form = styled.form`
   overflow: hidden;
 `;
 
-export const Movies = () => {
+const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [query, setQuery] = useState('');
   const [params, setParams] = useSearchParams();
@@ -47,3 +47,5 @@ export const Movies = () => {
     </>
   );
 };
+
+export default Movies;
