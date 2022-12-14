@@ -2,6 +2,16 @@ import { useState, useEffect } from 'react';
 import { getFilmsByQuery } from 'services/api';
 import { useSearchParams } from 'react-router-dom';
 import { MoviesList } from 'components/MoviesList';
+import styled from 'styled-components';
+
+const Form = styled.form`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+`;
 
 export const Movies = () => {
   const [movies, setMovies] = useState([]);
@@ -29,10 +39,10 @@ export const Movies = () => {
 
   return (
     <>
-      <form onSubmit={onSubmit}>
+      <Form onSubmit={onSubmit}>
         <input type="text" onChange={onChange} />
         <button type="submit">Search</button>
-      </form>
+      </Form>
       <MoviesList movies={movies} />
     </>
   );
